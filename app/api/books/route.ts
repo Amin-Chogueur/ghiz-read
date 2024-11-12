@@ -27,6 +27,7 @@ export async function GET(req: NextRequest) {
     const categories = await Category.find();
     // Fetch books with aggregation pipeline
     const books = await Book.aggregate([
+      { $sort: { createdAt: -1 } },
       { $match: query }, // Apply search filter if present
       {
         $lookup: {
