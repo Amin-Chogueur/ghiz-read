@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #16213e; /* Example color */
+  --color-secondary: #1a1a2e;
+  --color-accent: #c0c0c0;
+  --color-test: #191c22;
+  --color-test: #383e51;
+}
+body {
+  background-color: var(--color-secondary);
+  color: white;
+}
