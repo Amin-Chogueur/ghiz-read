@@ -5,8 +5,7 @@ export interface BookType {
   _id: string;
   image: string;
   quantity: number;
-  category: string;
-  categoryName: string;
+  category: Category;
   numberOfPages: string;
   auther: string;
 }
@@ -19,7 +18,6 @@ export interface CartItem {
   image: string;
   quantityInCart: number;
   quantityInStore: number;
-  category: string;
   categoryName: string;
   auther: string;
 }

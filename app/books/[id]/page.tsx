@@ -98,7 +98,7 @@ export default function SingleBook({ params }: { params: { id: string } }) {
               <div className="flex justify-between mt-5">
                 <h3>
                   <span className="text-orange-600">Catégorie :</span>{" "}
-                  {book.categoryName}
+                  {book.category.name}
                 </h3>
                 <h3>
                   <span className="text-orange-600">Prix :</span> {book.price}{" "}
@@ -118,7 +118,7 @@ export default function SingleBook({ params }: { params: { id: string } }) {
                 </button>
               ) : (
                 <Link
-                  className="disabled:bg-accent disabled:text-black bg-orange-700 p-2 rounded-lg mt-8 text-white"
+                  className="block w-fit bg-orange-700 p-2 rounded-lg mt-12 text-white"
                   href={"/contact"}
                 >
                   Contactez-nous &rarr;

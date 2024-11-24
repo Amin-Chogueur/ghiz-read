@@ -83,6 +83,7 @@ export default function BookContextProvider({
       );
       const { books, totalBooks, categories } = res.data;
       setBooks(books);
+      console.log(books);
       setCategories(categories);
       setTotalBooks(totalBooks);
     } catch (error) {
@@ -98,6 +99,7 @@ export default function BookContextProvider({
       const res = await axios.get(
         `https://ghiz-read-admin.vercel.app/api/books/${id}`
       );
+      console.log(res.data);
       setBook(res.data);
     } catch (error) {
       console.log("Error fetching book:", error);
@@ -132,8 +134,7 @@ export default function BookContextProvider({
           image: newBook.image,
           quantityInStore: newBook.quantity,
           quantityInCart: 1, // Default quantity
-          category: newBook.category,
-          categoryName: newBook.categoryName,
+          categoryName: newBook.category.name,
           auther: newBook.auther,
         };
 

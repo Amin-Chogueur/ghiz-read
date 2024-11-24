@@ -51,7 +51,7 @@ export default function Home() {
     }, 500);
   }
   const filteredBooks = books.filter((book) =>
-    searchCategory !== "All" ? book.categoryName === searchCategory : true
+    searchCategory !== "All" ? book.category.name === searchCategory : true
   );
 
   useEffect(() => {
