@@ -15,16 +15,19 @@ Tailwind CSS: For responsive and clean UI design
 
 Framer Motion: For smooth animations
 
-##Installation
-Clone the repository:
+## Getting Started
+To run the project locally, clone the repository and install the dependencies:
 
 git clone https://github.com/Amin-Chogueur/ghiz-read.git
 
-npm install
+cd ghiz-read
 
-Run the development server:
+npm install
 
 npm run dev
 
-Visit http://localhost:3000 in your browser.
+Then, open the app in your browser at http://localhost:3000.
+
+## Deployment
+This project is hosted on Vercel.
 
